@@ -11,7 +11,7 @@ class DatabaseConnectionManager {
         if (is_null(self::$db)) {
             self::$dsn = 'mysql:host=localhost;dbname=workshop-ibm';
             self::$username = 'root';
-            self::$password = 'root';
+            self::$password = '';
 
             try {
                 self::$db = new PDO(self::$dsn, self::$username, self::$password);

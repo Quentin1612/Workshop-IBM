@@ -1,6 +1,7 @@
 <?php
 
 include("../Managers/DatabaseConnectionManager.php");
+include("../Managers/WalletManager.php");
 
 class PersonManager {
     public static function insertNewPerson($login, $password, $firstName, $familyName, $email, $address) {
@@ -8,8 +9,6 @@ class PersonManager {
         $personIdentifier = self::getNumberOfPersons() + 1;
         $walletIdentifier = WalletManager::getNumberOfWallets() + 1;
         WalletManager::insertNewWallet(0);
-
-        echo $login;
 
         if ($connection) {
             /*$request = 'INSERT INTO person VALUES('
@@ -20,10 +19,10 @@ class PersonManager {
                 . $familyName . ', '
                 . $address . ', '
                 . $walletIdentifier . ', '
-                . $email . ')';
+                . $email . ')';*/
 
-            $request = "INSERT INTO 'workshop-ibm'.'person' (identifier, login, password, firstName, familyName, address, wallet_id, email) VALUES(4, 'michel.dupont', '123', 'michel', 'dupont', '10 Rue de la Mairie 62000 Arras', 1, 'michel.dupont@gmail.com')";
-            $connection->query($request);*/
+            $request = "INSERT INTO person (identifier, login, password, firstName, familyName, address, wallet_id, email) VALUES(5, 'michel.dupont', '123', 'michel', 'dupont', '10 Rue de la Mairie 62000 Arras', 1, 'michel.dupont@gmail.com')";
+            $connection->query($request);
 
             /*$request = $connection->prepare('INSERT INTO person VALUES(?, ?, ?, ?, ?, ?, ?, ?)');
             $request->execute(array($personIdentifier, $login, $password, $firstName, $familyName, $address, $walletIdentifier, $email));*/
