@@ -11,10 +11,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 	</head>
-	<body style="background-image:url(../images/picture.jpg)">
+	<body>
 
 		<!-- Header -->
-			<header id="header" class="alt" style="display:block">
+			<header id="header" class="alt" style="background-color:black;">
 				<div class="logo"><a href="index.html">Casinonline<span> by Groupe 2</span></a></div>
 				<a href="#menu">Menu</a>
 			</header>
@@ -22,21 +22,47 @@
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
-						<li><a href="index.html">Acceuil</a></li>
-						<li><a href="matchavenir.html">Jouer au jeu de dés</a></li>
-						<li><a href="mabourse.html">Ma bourse</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="matchavenir.php">Jouer au jeu de dés</a></li>
+					<li><a href="mabourse.php">Ma bourse</a></li>
 				</ul>
 			</nav>
 
-<div class="affichage" style="width:97%; height:auto; min-height:900px; background-color:rgb(236, 236, 236); border-radius:5%; margin-top:100px; margin-left:auto; margin-right:auto; display:block; border-color:black">
-				
-			</div>
+		
+		
+		<!-- One -->
+			<section id="one" class="wrapper style2">
+				<div class="inner">
+					<div class="grid-style">
+
+						<div id="banner-wrapper">
+
+<legend><!-- Form Name -->
+<h1>Votre bourse contient : $NbrDeBetcoins betcoins</h1></div>
+</legend>
+					<section id="banner">
+						
+<form class="form-horizontal">
+<fieldset>
+
+
+
 	
-			<div class="copyright">
+	</fieldset>
+	</form>
+	</section>
+	</div>	
+	</div>						
+
+
+
+
+
+
+				<div class="copyright">
 					&copy; WeHaveNoName
-			</div>
-	
-		</footer>
+				</div>
+			</footer>
 
 		<!-- Scripts -->
 			<script src="../assets/js/jquery.min.js"></script>
