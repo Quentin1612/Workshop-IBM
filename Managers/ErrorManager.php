@@ -2,11 +2,10 @@
 /**
  * Created by PhpStorm.
  * User: Quentin
- * Date: 16/10/2017
- * Time: 13:59
+ * Date: 17/10/2017
+ * Time: 16:55
  */
 
-class TeamManager
-{
+class ErrorManager {
 
 }

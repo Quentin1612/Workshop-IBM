@@ -39,4 +39,19 @@ class PersonManager {
         DatabaseConnectionManager::stopConnection();
         return $answer[0];
     }
+
+    public static function checkIfEmailExists($email) {
+        $connection = DatabaseConnectionManager::getInstance();
+        $answer = null;
+
+        if ($connection) {
+            $answer = $connection->query('SELECT * FROM person WHERE email = "' . $email . '"')->fetchAll();
+            if(count($answer) > 0) {
+                echo 'email existe déjà';
+            }
+        }
+
+        DatabaseConnectionManager::stopConnection();
+        return $answer[0];
+    }
 }
