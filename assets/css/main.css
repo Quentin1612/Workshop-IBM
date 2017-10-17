@@ -57,6 +57,7 @@
 		box-sizing: border-box;
 	}
 
+	
 /* Containers */
 
 	.container {
@@ -3997,10 +3998,16 @@
 
 /* Banner */
 
+	.container {
+		background-color: green;
+		padding: 3em 0;
+		position: relative;
+	}
+
 	.banner {
 		background-color: #8a4680;
 		color: #e2d1df;
-		padding: 8em 0;
+		padding: 4em 0;
 		position: relative;
 	}
 
@@ -4161,7 +4168,7 @@
 			.banner > article h2 {
 				font-size: 7rem;
 				margin-bottom: 0;
-				color: #FFF;
+				color: #000;
 				font-weight: 300;
 			}
 
@@ -4257,9 +4264,12 @@
 
 			.banner > article h2 {
 				font-size: 4em;
+				color:red;
 			}
 
 		}
+
+		
 
 		body.is-mobile .banner > article {
 			background-attachment: scroll;
