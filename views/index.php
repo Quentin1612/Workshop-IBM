@@ -1,45 +1,33 @@
 <!DOCTYPE HTML>
-<!--
-	Hielo by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
 <html>
 <head>
     <title>Hielo by TEMPLATED</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="../assets/css/main.css"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
 </head>
 <body>
 
 <!-- Header -->
 <header id="header" class="alt">
-    <div class="logo"><a href="index.html">Site de paris sportif <span>by Groupe 2</span></a></div>
+    <div class="logo"><a href="index.html">CasinOnline<span> by Groupe 2</span></a></div>
     <a href="#menu">Menu</a>
 </header>
 
 <!-- Nav -->
 <nav id="menu">
     <ul class="links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="generic.html">Generic</a></li>
-        <li><a href="elements.html">Elements</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="matchavenir.php">Jeu de dès 1 vs 1</a></li>
+        <li><a href="mabourse.html">Mon Portefeuille</a></li>
     </ul>
 </nav>
 
 <!-- Banner -->
 <section class="banner full">
     <article>
-        <img src="../images/slide02.jpg" alt=""/>
-        <div class="inner">
-            <header>
-
-                <h2>Fais toi de la thune ma gueule</h2>
-            </header>
-        </div>
+        <img src="../images/picture.jpg" alt="" />
     </article>
-
 </section>
 
 <!-- One -->
@@ -56,34 +44,28 @@
 
                     <form class="form-horizontal">
                         <fieldset>
-
-
                             <!-- Text input-->
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="textinput">Adresse mail</label>
                                 <div class="col-md-4">
-                                    <input id="textinput" name="textinput" placeholder="" class="form-control input-md"
-                                           type="text">
+                                    <input id="textinput" name="textinput" placeholder="" class="form-control input-md" type="text">
 
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-md-4 control-label" for="textinput">Mot de passe</label>
+                                <label class="col-md-4 control-label" for="textinput">mot de passe</label>
                                 <div class="col-md-4">
-                                    <input id="textinput" name="textinput" placeholder="" class="form-control input-md"
-                                           type="text">
+                                    <input id="textinput" name="textinput" placeholder="" class="form-control input-md" type="text">
 
                                 </div>
                             </div>
-
 
                             <!-- Button -->
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="singlebutton"></label>
                                 <div class="col-md-4">
-                                    <button id="singlebutton" name="singlebutton" class="btn btn-success">Connexion
-                                    </button>
+                                    <button id="singlebutton" name="singlebutton" class="btn btn-success">Connexion</button>
                                 </div>
                             </div>
 
@@ -93,20 +75,20 @@
             </div>
         </div>
 
-
         <legend><!-- Form Name -->
             <div class="inscrivez-vous"><h1>Inscrivez-vous</h1></div>
         </legend>
         <section id="banner">
 
-            <form class="form-horizontal" action="../controllers/AccountCreation.php" method="POST">
+            <form class="form-horizontal">
                 <fieldset>
 
                     <!-- Text input-->
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="textinput">Nom</label>
                         <div class="col-md-4">
-                            <input id="textinput" required="true" name="familyName" placeholder="" class="form-control input-md" type="text">
+                            <input id="textinput" name="familyName" placeholder="" class="form-control input-md" type="text">
+
                         </div>
                     </div>
 
@@ -114,16 +96,8 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="textinput">Prenom</label>
                         <div class="col-md-4">
-                            <input id="textinput" required="true" name="firstName" placeholder="" class="form-control input-md" type="text">
-                        </div>
-                    </div>
+                            <input id="textinput" name="firstName" placeholder="" class="form-control input-md" type="text">
 
-
-                    <!-- Text input-->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label" for="textinput">Adresse</label>
-                        <div class="col-md-4">
-                            <input id="textinput" required="true" name="address" placeholder="" class="form-control input-md" type="text">
                         </div>
                     </div>
 
@@ -131,7 +105,8 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="textinput">Adresse mail</label>
                         <div class="col-md-4">
-                            <input id="textinput" required="true" name="email" placeholder="" class="form-control input-md" type="text">
+                            <input id="textinput" name="email" placeholder="" class="form-control input-md" type="text">
+
                         </div>
                     </div>
 
@@ -139,7 +114,8 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="passwordinput">Mot de passe</label>
                         <div class="col-md-4">
-                            <input id="passwordinput" required="true" name="password" placeholder="" class="form-control input-md" type="password">
+                            <input id="passwordinput" name="password" placeholder="" class="form-control input-md" type="password">
+
                         </div>
                     </div>
 
@@ -157,9 +133,8 @@
     </div>
     </div>
 
-
     <div class="copyright">
-        &copy; Untitled. All rights reserved.
+        &copy; CasinOnline
     </div>
     </footer>
 
@@ -169,6 +144,6 @@
     <script src="../assets/js/skel.min.js"></script>
     <script src="../assets/js/util.js"></script>
     <script src="../assets/js/main.js"></script>
-
+</section>
 </body>
 </html>

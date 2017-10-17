@@ -21,7 +21,6 @@ class PersonManager {
                 . $walletIdentifier . ", '"
                 . $email . "')";
 
-            echo $request;
             $connection->query($request);
         }
 
