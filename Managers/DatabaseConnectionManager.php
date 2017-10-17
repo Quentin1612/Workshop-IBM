@@ -1,34 +1,29 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Quentin
- * Date: 16/10/2017
- * Time: 11:43
- */
 
 class DatabaseConnectionManager {
-    private $db = null;
-    private static $instance = null;
-
-    // private constructor
-    private function __construct() {
-        setConnection();
-    }
+    private static $db = null;
+    private static $dsn = null;
+    private static $username = null;
+    private static $password = null;
 
     // public method to retrieve unique instance
     public static function getInstance() {
-        if (is_null(self::$instance)) {
-            self::$instance = new DatabaseConnectionManager();
+        if (is_null(self::$db)) {
+            self::$dsn = 'mysql:host=localhost;dbname=workshop-ibm';
+            self::$username = 'root';
+            self::$password = 'root';
+
+            try {
+                self::$db = new PDO(self::$dsn, self::$username, self::$password);
+            } catch(PDOException $e) {
+                echo 'Erreur de connexion : ' . $e . "\n";
+            }
         }
-        return self::$instance;
+        return self::$db;
     }
 
-    // set connection if instance is not null
-    private static function setConnection() {
-        try {
-            $db = new PDO('mysql:host=localhost;dbname=workshop-ibm', 'root', '');
-        } catch(PDOException $e) {
-            print("Erreur de connexion : " . $e);
-        }
+    // stop database connection
+    public static function stopConnection() {
+        self::$db = null;
     }
 }
