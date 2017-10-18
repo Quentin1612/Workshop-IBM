@@ -1,8 +1,3 @@
-<?php
-//include_once("../Managers/SessionManager.php");
-//SessionManager::closeSession();
-include_once("../Managers/DatabaseConnectionManager.php");
-?>
 <!DOCTYPE HTML>
 <html>
 
@@ -23,9 +18,10 @@ include_once("../Managers/DatabaseConnectionManager.php");
 <!-- Nav -->
 <nav id="menu">
     <ul class="links">
-        <li><a href="home.php">Home</a></li>
-        <li><a href="diceGame.php">Jeu de dès 1 vs 1</a></li>
-        <li><a href="mabourse.php">Mon Portefeuille</a></li>
+        <li><a href="http://localhost/Workshop-IBM/views/home.php">Accueil</a></li>
+        <li><a href="http://localhost/Workshop-IBM/views/diceGame.php">Jeu de dès 1 vs 1</a></li>
+        <li><a href="http://localhost/Workshop-IBM/views/mabourse.php">Portefeuille</a></li>
+        <li><a href="http://localhost/Workshop-IBM/controllers/Disconnection.php">Déconnexion</a></li>
     </ul>
 </nav>
 
@@ -48,7 +44,7 @@ include_once("../Managers/DatabaseConnectionManager.php");
                 </legend>
                 <section id="banner">
 
-                    <form class="form-horizontal" action="../controllers/LogIn.php" method="POST">
+                    <form class="form-horizontal" action="../controllers/login.php" method="POST">
                         <fieldset>
                             <!-- Text input-->
                             <div class="form-group">

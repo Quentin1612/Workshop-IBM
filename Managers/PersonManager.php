@@ -39,15 +39,12 @@ class PersonManager {
         return $answer[0];
     }
 
-    public static function checkIfEmailExists($email) {
+    public static function retrievePersonIdentifierWithEmail($email) {
         $connection = DatabaseConnectionManager::getInstance();
         $answer = null;
 
         if ($connection) {
-            $answer = $connection->query('SELECT * FROM person WHERE email = "' . $email . '"')->fetchAll();
-            if(count($answer) > 0) {
-                echo 'email existe déjà';
-            }
+            $answer = $connection->query('SELECT identifier FROM person WHERE email = "' . $email . '"')->fetch();
         }
 
         DatabaseConnectionManager::stopConnection();

@@ -7,10 +7,15 @@
  */
 
 include_once("../Managers/ErrorManager.php");
+include_once("../Managers/PersonManager.php");
 
 class SessionManager {
     public static function startSession($email) {
         session_start();
+
+        $identifier = PersonManager::retrievePersonIdentifierWithEmail($email);
+
+        $_SESSION["id"] = $identifier;
         $_SESSION["userEmail"] = $email;
     }
 
