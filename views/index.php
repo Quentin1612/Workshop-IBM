@@ -1,6 +1,6 @@
 <?php
-//include_once("../Managers/SessionManager.php");
-//SessionManager::closeSession();
+include_once("../Managers/SessionManager.php");
+SessionManager::closeSession();
 ?>
 <!DOCTYPE HTML>
 <html>

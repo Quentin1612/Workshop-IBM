@@ -2,7 +2,6 @@
 include("../Managers/SessionManager.php");
 if(SessionManager::checkSession()) {
     ?>
-
     <!DOCTYPE HTML>
     <html>
     <head>
