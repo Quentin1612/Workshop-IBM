@@ -25,6 +25,7 @@
 					<li><a href="index.php">Home</a></li>
 					<li><a href="matchavenir.php">Jouer au jeu de dés</a></li>
 					<li><a href="mabourse.php">Ma bourse</a></li>
+					<li><a href="deconnexion.php.php">Se déconnecter</a></li>
 				</ul>
 			</nav>
 

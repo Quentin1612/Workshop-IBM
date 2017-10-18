@@ -25,6 +25,7 @@
 					<li><a href="index.php">Home</a></li>
 					<li><a href="matchavenir.php">Jouer au jeu de dés</a></li>
 					<li><a href="mabourse.html">Ma bourse</a></li>
+					
 				</ul>
 			</nav>
 
