@@ -6,7 +6,7 @@
  * Time: 14:27
  */
 
-    include("../Managers/PersonManager.php");
+    include_once("../Managers/PersonManager.php");
 
     $firstName = $_POST["firstName"];
     $familyName = $_POST["familyName"];

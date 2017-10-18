@@ -1,3 +1,7 @@
+<?php
+//include_once("../Managers/SessionManager.php");
+//SessionManager::closeSession();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -17,7 +21,7 @@
 <!-- Nav -->
 <nav id="menu">
     <ul class="links">
-        <li><a href="index.php">Home</a></li>
+        <li><a href="home.php">Home</a></li>
         <li><a href="matchavenir.php">Jeu de dès 1 vs 1</a></li>
         <li><a href="mabourse.html">Mon Portefeuille</a></li>
     </ul>
@@ -42,13 +46,13 @@
                 </legend>
                 <section id="banner">
 
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" action="../controllers/LogIn.php" method="POST">
                         <fieldset>
                             <!-- Text input-->
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="textinput">Adresse mail</label>
                                 <div class="col-md-4">
-                                    <input id="textinput" name="textinput" placeholder="" class="form-control input-md" type="text">
+                                    <input id="textinput" required="true" name="email" placeholder="" class="form-control input-md" type="text">
 
                                 </div>
                             </div>
@@ -56,7 +60,7 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="textinput">mot de passe</label>
                                 <div class="col-md-4">
-                                    <input id="textinput" name="textinput" placeholder="" class="form-control input-md" type="text">
+                                    <input id="textinput" required="true" name="password" placeholder="" class="form-control input-md" type="password">
 
                                 </div>
                             </div>
@@ -136,7 +140,6 @@
     <div class="copyright">
         &copy; CasinOnline
     </div>
-    </footer>
 
     <!-- Scripts -->
     <script src="../assets/js/jquery.min.js"></script>

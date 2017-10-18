@@ -1,7 +1,7 @@
 <?php
 
-include("../Managers/DatabaseConnectionManager.php");
-include("../Managers/WalletManager.php");
+include_once("../Managers/WalletManager.php");
+include_once("../Managers/DatabaseConnectionManager.php");
 
 class PersonManager {
     public static function insertNewPerson($login, $password, $firstName, $familyName, $email, $address) {

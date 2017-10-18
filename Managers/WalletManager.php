@@ -6,6 +6,8 @@
  * Time: 13:59
  */
 
+include_once("../Managers/DatabaseConnectionManager.php");
+
 class WalletManager {
     public static function insertNewWallet($amount) {
         $connection = DatabaseConnectionManager::getInstance();
