@@ -1,7 +1,4 @@
 <?php
-    if(!isset($errorMessage)) {
-        $errorMessage = "Une erreur est survenue";
-    }
 
     if(session_status() == 1) {
         session_start();
@@ -40,6 +37,7 @@
 
     <div class="inner">
         <h1><?php echo $errorMessage; ?></h1>
+        <h3>Cliquez <a href="index.php">ici</a> pour vous rendre sur la page de connexion / inscription</h3>
     </div>
 
     <div class="copyright">

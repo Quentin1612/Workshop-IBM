@@ -44,7 +44,7 @@
                 </legend>
                 <section id="banner">
 
-                    <form class="form-horizontal" action="../controllers/LogIn.php" method="POST">
+                    <form class="form-horizontal" action="../controllers/login.php" method="POST">
                         <fieldset>
                             <!-- Text input-->
                             <div class="form-group">
