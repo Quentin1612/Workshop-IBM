@@ -36,7 +36,7 @@
 <section id="one" class="wrapper style2">
 
     <div class="inner">
-        <h1><?php echo $errorMessage; ?></h1>
+        <h3><?php echo $errorMessage; ?></h3>
         <h3>Cliquez <a href="index.php">ici</a> pour vous rendre sur la page de connexion / inscription</h3>
     </div>
 
