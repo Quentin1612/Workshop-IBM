@@ -1,4 +1,8 @@
 <?php
     include_once("../Managers/SessionManager.php");
-    SessionManager::checkSession();
+    if(SessionManager::checkSession()) {
+        ?>
+
+        <?php
+    }
 ?>

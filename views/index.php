@@ -15,7 +15,7 @@
 
 <!-- Header -->
 <header id="header" class="alt">
-    <div class="logo"><a href="index.html">CasinOnline<span> by Groupe 2</span></a></div>
+    <div class="logo"><a href="index.php">CasinOnline<span> by Groupe 2</span></a></div>
     <a href="#menu">Menu</a>
 </header>
 
@@ -23,8 +23,8 @@
 <nav id="menu">
     <ul class="links">
         <li><a href="home.php">Home</a></li>
-        <li><a href="matchavenir.php">Jeu de dès 1 vs 1</a></li>
-        <li><a href="mabourse.html">Mon Portefeuille</a></li>
+        <li><a href="diceGame.php">Jeu de dès 1 vs 1</a></li>
+        <li><a href="mabourse.php">Mon Portefeuille</a></li>
     </ul>
 </nav>
 

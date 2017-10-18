@@ -21,6 +21,9 @@ class SessionManager {
     public static function checkSession() {
         if(!isset($_SESSION["userEmail"])) {
             ErrorManager::displayErrorPage("userNotLogged");
+            return false;
+        } else {
+            return true;
         }
     }
 }
