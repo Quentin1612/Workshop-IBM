@@ -22,9 +22,9 @@ SessionManager::closeSession();
 <!-- Nav -->
 <nav id="menu">
     <ul class="links">
-        <li><a href="home.php">Home</a></li>
-        <li><a href="diceGame.php">Jeu de dès 1 vs 1</a></li>
-        <li><a href="mabourse.php">Mon Portefeuille</a></li>
+        <li><a href="../views/home.php">Home</a></li>
+        <li><a href="../views/diceGame.php">Jeu de dès 1 vs 1</a></li>
+        <li><a href="../views/mabourse.php">Mon Portefeuille</a></li>
     </ul>
 </nav>
 

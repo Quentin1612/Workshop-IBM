@@ -23,9 +23,9 @@
         <!-- Nav -->
         <nav id="menu">
             <ul class="links">
-                <li><a href="home.php">Home</a></li>
-                <li><a href="diceGame.php">Jeu de dès 1 vs 1</a></li>
-                <li><a href="mabourse.php">Mon Portefeuille</a></li>
+                <li><a href="http://localhost/Workshop-IBM/views/home.php">Home</a></li>
+                <li><a href="http://localhost/Workshop-IBM/views/diceGame.php">Jeu de dès 1 vs 1</a></li>
+                <li><a href="http://localhost/Workshop-IBM/views/mabourse.php">Mon Portefeuille</a></li>
             </ul>
         </nav>
 

@@ -1,14 +1,11 @@
 <?php
 include_once("../Managers/SessionManager.php");
+
 if(SessionManager::checkSession()) {
     ?>
     <!DOCTYPE HTML>
-    <!--
-        Hielo by TEMPLATED
-        templated.co @templatedco
-        Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-    -->
     <html>
+
     <head>
         <title>Hielo by TEMPLATED</title>
         <meta charset="utf-8" />
@@ -18,46 +15,26 @@ if(SessionManager::checkSession()) {
     <body>
 
     <!-- Header -->
-    <header id="header" class="alt" style="background-color:black;">
-        <div class="logo"><a href="index.php">Casinonline<span> by Groupe 2</span></a></div>
+    <header id="header" class="alt">
+        <div class="logo"><a href="index.php">CasinOnline<span> by Groupe 2</span></a></div>
         <a href="#menu">Menu</a>
     </header>
 
     <!-- Nav -->
     <nav id="menu">
         <ul class="links">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="diceGame.php">Jouer au jeu de dés</a></li>
-            <li><a href="mabourse.php">Ma bourse</a></li>
-            <li><a href="deconnexion.php.php">Se déconnecter</a></li>
+            <li><a href="http://localhost/Workshop-IBM/views/home.php">Home</a></li>
+            <li><a href="http://localhost/Workshop-IBM/views/diceGame.php">Jeu de dès 1 vs 1</a></li>
+            <li><a href="http://localhost/Workshop-IBM/views/mabourse.php">Mon Portefeuille</a></li>
         </ul>
     </nav>
 
     <!-- One -->
     <section id="one" class="wrapper style2">
-        <div class="inner">
-            <div class="grid-style">
-
-                <div id="banner-wrapper">
-
-                    <legend><!-- Form Name -->
-                        <h1>Votre bourse contient : $NbrDeBetcoins betcoins</h1></div>
-                </legend>
-                <section id="banner">
-
-                    <form class="form-horizontal">
-                        <fieldset>
-
-                        </fieldset>
-                    </form>
-                </section>
-            </div>
-        </div>
 
         <div class="copyright">
-            &copy; WeHaveNoName
+            &copy; CasinOnline
         </div>
-        </footer>
 
         <!-- Scripts -->
         <script src="../assets/js/jquery.min.js"></script>
