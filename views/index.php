@@ -20,8 +20,13 @@
     <ul class="links">
         <li><a href="/Workshop-IBM/views/home.php">Accueil</a></li>
         <li><a href="/Workshop-IBM/views/diceGame.php">Jeu de dès 1 vs 1</a></li>
+<<<<<<< HEAD
         <li><a href="/Workshop-IBM/views/mabourse.php">Portefeuille</a></li>
         <li><a href="/Workshop-IBM/controllers/Disconnection.php">Déconnexion</a></li>
+=======
+        <li><a href="/Workshop-IBM/views/portefeuille.php">Portefeuille</a></li>
+        <li><a href="/Workshop-IBM/controllers/disconnection.php">Déconnexion</a></li>
+>>>>>>> 70812fdf7915eeca8ba5f8a3265ea53fc523ac16
     </ul>
 </nav>
 

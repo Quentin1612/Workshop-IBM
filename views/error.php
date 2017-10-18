@@ -25,10 +25,10 @@
 <!-- Nav -->
 <nav id="menu">
     <ul class="links">
-        <li><a href="http://localhost/Workshop-IBM/views/home.php">Accueil</a></li>
-        <li><a href="http://localhost/Workshop-IBM/views/diceGame.php">Jeu de dès 1 vs 1</a></li>
-        <li><a href="http://localhost/Workshop-IBM/views/mabourse.php">Portefeuille</a></li>
-        <li><a href="http://localhost/Workshop-IBM/controllers/Disconnection.php">Déconnexion</a></li>
+        <li><a href="/Workshop-IBM/views/home.php">Accueil</a></li>
+        <li><a href="/Workshop-IBM/views/diceGame.php">Jeu de dès 1 vs 1</a></li>
+        <li><a href="/Workshop-IBM/views/portefeuille.php">Portefeuille</a></li>
+        <li><a href="/Workshop-IBM/controllers/disconnection.php">Déconnexion</a></li>
     </ul>
 </nav>
 
