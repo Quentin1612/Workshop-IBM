@@ -1,6 +1,8 @@
 <?php
 include_once("../Managers/SessionManager.php");
 
+session_start();
+
 if(SessionManager::checkSession()) {
     ?>
     <!DOCTYPE HTML>
@@ -23,9 +25,10 @@ if(SessionManager::checkSession()) {
     <!-- Nav -->
     <nav id="menu">
         <ul class="links">
-            <li><a href="http://localhost/Workshop-IBM/views/home.php">Home</a></li>
+            <li><a href="http://localhost/Workshop-IBM/views/home.php">Accueil</a></li>
             <li><a href="http://localhost/Workshop-IBM/views/diceGame.php">Jeu de dès 1 vs 1</a></li>
-            <li><a href="http://localhost/Workshop-IBM/views/mabourse.php">Mon Portefeuille</a></li>
+            <li><a href="http://localhost/Workshop-IBM/views/mabourse.php">Portefeuille</a></li>
+            <li><a href="http://localhost/Workshop-IBM/controllers/Disconnection.php">Déconnexion</a></li>
         </ul>
     </nav>
 

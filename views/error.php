@@ -2,6 +2,11 @@
     if(!isset($errorMessage)) {
         $errorMessage = "Une erreur est survenue";
     }
+
+    if(session_status() == 1) {
+        session_start();
+    }
+
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -23,9 +28,10 @@
 <!-- Nav -->
 <nav id="menu">
     <ul class="links">
-        <li><a href="http://localhost/Workshop-IBM/views/home.php">Home</a></li>
+        <li><a href="http://localhost/Workshop-IBM/views/home.php">Accueil</a></li>
         <li><a href="http://localhost/Workshop-IBM/views/diceGame.php">Jeu de dès 1 vs 1</a></li>
-        <li><a href="http://localhost/Workshop-IBM/views/mabourse.php">Mon Portefeuille</a></li>
+        <li><a href="http://localhost/Workshop-IBM/views/mabourse.php">Portefeuille</a></li>
+        <li><a href="http://localhost/Workshop-IBM/controllers/Disconnection.php">Déconnexion</a></li>
     </ul>
 </nav>
 
