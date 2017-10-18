@@ -30,4 +30,24 @@ class WalletManager {
 
         return $answer[0];
     }
+
+    public static function getWalletAmountWithIdentifier($id) {
+        $connection = DatabaseConnectionManager::getInstance();
+        $answer = null;
+
+        if ($connection) {
+            $answer = $connection->query('SELECT bet_coin_amount FROM wallet WHERE identifier = (SELECT wallet_id FROM person WHERE identifier = "' . $id . '")')->fetch();
+        }
+
+        return $answer[0];
+    }
+
+    public static function setWalletAmountWithIdentifier($id, $newAmount) {
+        $connection = DatabaseConnectionManager::getInstance();
+        $answer = null;
+
+        if ($connection) {
+            $connection->query('UPDATE wallet SET bet_coin_amount = "' . $newAmount . '" WHERE identifier = (SELECT wallet_id FROM person WHERE identifier = "' . $id . '")');
+        }
+    }
 }
