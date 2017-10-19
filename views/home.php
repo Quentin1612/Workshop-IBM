@@ -23,7 +23,7 @@
 
         <!-- Header -->
         <header id="header" class="alt">
-            <div class="logo"><a href="index.php">CasinOnline<span> by Groupe 2</span></a></div>
+            <div class="logo"><a href="../views/home.php">CasinOnline<span> by Groupe 2</span></a></div>
             <a href="#menu">Menu</a>
         </header>
 
@@ -35,6 +35,9 @@
                 <li><a href="/Workshop-IBM/views/portefeuille.php">Portefeuille</a></li>
                 <li><a href="/Workshop-IBM/controllers/disconnection.php">Déconnexion</a></li>
             </ul>
+            <div class="copyright">
+                &copy; CasinOnline
+            </div>
         </nav>
 
         <!-- One -->
@@ -68,9 +71,7 @@
         </div>
 
 
-            <div class="copyright">
-                &copy; CasinOnline
-            </div>
+            
 
             <!-- Scripts -->
             <script src="../assets/js/jquery.min.js"></script>

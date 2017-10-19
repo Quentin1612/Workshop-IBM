@@ -30,6 +30,9 @@
         <li><a href="/Workshop-IBM/views/portefeuille.php">Portefeuille</a></li>
         <li><a href="/Workshop-IBM/controllers/disconnection.php">Déconnexion</a></li>
     </ul>
+    <div class="copyright">
+        &copy; CasinOnline
+    </div>
 </nav>
 
 <!-- One -->
@@ -40,9 +43,7 @@
         <h3>Cliquez <a href="../views/index.php">ici</a> pour vous rendre sur la page de connexion / inscription</h3>
     </div>
 
-    <div class="copyright">
-        &copy; CasinOnline
-    </div>
+    
 
     <!-- Scripts -->
     <script src="../assets/js/jquery.min.js"></script>

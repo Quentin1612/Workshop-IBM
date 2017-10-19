@@ -18,11 +18,14 @@
 <!-- Nav -->
 <nav id="menu">
     <ul class="links">
-        <li><a href="/Workshop-IBM/views/home.php">Accueil</a></li>
+        <li><a href="/Workshop-IBM/views/index.php">Accueil</a></li>
         <li><a href="/Workshop-IBM/views/diceGame.php">Jeu de dès 1 vs 1</a></li>
         <li><a href="/Workshop-IBM/views/portefeuille.php">Portefeuille</a></li>
         <li><a href="/Workshop-IBM/controllers/disconnection.php">Déconnexion</a></li>
     </ul>
+    <div class="copyright">
+        &copy; CasinOnline
+    </div>
 </nav>
 
 <!-- Banner -->
@@ -129,23 +132,22 @@
                         </div>
                     </div>
 
-                    </br>
+                    
                     <!-- Button -->
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="singlebutton"></label>
                         <div class="col-md-4">
                             <button id="singlebutton" name="singlebutton" class="btn btn-success">Valider</button>
                         </div>
+</br></br>
                     </div>
                 </fieldset>
             </form>
         </section>
-    </div>
+    
     </div>
 
-    <div class="copyright">
-        &copy; CasinOnline
-    </div>
+    
 
     <!-- Scripts -->
     <script src="../assets/js/jquery.min.js"></script>

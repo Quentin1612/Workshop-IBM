@@ -2,11 +2,10 @@
 include_once("../Managers/SessionManager.php");
 include_once("../Managers/WalletManager.php");
 
-if(session_status() == 1) {
-    session_start();
-}
 
-$credit = WalletManager::getWalletAmountWithIdentifier($_SESSION["id"]);
+    session_start();
+    
+    if(session_status() == 1) {$credit = WalletManager::getWalletAmountWithIdentifier($_SESSION["id"]);}
 
 if(SessionManager::checkSession()) {
     ?>
@@ -35,6 +34,9 @@ if(SessionManager::checkSession()) {
             <li><a href="/Workshop-IBM/views/portefeuille.php">Portefeuille</a></li>
             <li><a href="/Workshop-IBM/controllers/disconnection.php">Déconnexion</a></li>
         </ul>
+        <div class="copyright">
+        &copy; CasinOnline
+    </div>
     </nav>
 
     <!-- One -->
@@ -98,9 +100,7 @@ if(SessionManager::checkSession()) {
             </div>
         </div>
 
-        <div class="copyright">
-            &copy; CasinOnline
-        </div>
+      
 
         <!-- Scripts -->
         <script src="../assets/js/jquery.min.js"></script>
