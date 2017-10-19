@@ -2,7 +2,9 @@
 include_once("../Managers/SessionManager.php");
 include_once("../Managers/WalletManager.php");
 
-session_start();
+if(session_status() == 1) {
+    session_start();
+}
 
 $credit = WalletManager::getWalletAmountWithIdentifier($_SESSION["id"]);
 
@@ -21,7 +23,7 @@ if(SessionManager::checkSession()) {
 
     <!-- Header -->
     <header id="header" class="alt">
-        <div class="logo"><a href="index.php">CasinOnline<span> by Groupe 2</span></a></div>
+        <div class="logo"><a href="../views/home.php">CasinOnline<span> by Groupe 2</span></a></div>
         <a href="#menu">Menu</a>
     </header>
 

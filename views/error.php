@@ -37,7 +37,7 @@
 
     <div class="inner">
         <h3><?php echo $errorMessage; ?></h3>
-        <h3>Cliquez <a href="index.php">ici</a> pour vous rendre sur la page de connexion / inscription</h3>
+        <h3>Cliquez <a href="../views/index.php">ici</a> pour vous rendre sur la page de connexion / inscription</h3>
     </div>
 
     <div class="copyright">

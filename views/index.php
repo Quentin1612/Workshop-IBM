@@ -82,7 +82,7 @@
         </legend>
         <section id="banner">
 
-            <form class="form-horizontal">
+            <form class="form-horizontal" action="../controllers/accountCreation.php" method="POST">
                 <fieldset>
 
                     <!-- Text input-->
@@ -108,6 +108,14 @@
                         <label class="col-md-4 control-label" for="textinput">Adresse mail</label>
                         <div class="col-md-4">
                             <input id="textinput" name="email" placeholder="" class="form-control input-md" type="text">
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="textinput">Adresse</label>
+                        <div class="col-md-4">
+                            <input id="textinput" name="address" placeholder="" class="form-control input-md" type="text">
 
                         </div>
                     </div>

@@ -39,6 +39,20 @@ class PersonManager {
         return $answer[0];
     }
 
+    public static function getname($id){
+       $connection = DatabaseConnectionManager::getInstance();
+       $nom = null;
+       $prenom = null;
+
+    
+       if ($connection) {
+            $nom = $connection->query('SELECT firstName FROM person WHERE identifier = "' . $id . '"')->fetch();
+        }
+    
+            return $nom[0];
+    }
+    
+
     public static function retrievePersonIdentifierWithEmail($email) {
         $connection = DatabaseConnectionManager::getInstance();
         $answer = null;

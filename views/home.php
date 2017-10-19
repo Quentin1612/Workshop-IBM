@@ -1,9 +1,12 @@
 <?php
     include_once("../Managers/SessionManager.php");
+    include_once("../Managers/PersonManager.php");
 
     if(session_status() == 1) {
         session_start();
     }
+
+    $nom = PersonManager::getName($_SESSION["id"]);
 
     if(SessionManager::checkSession()) {
         ?>
@@ -36,6 +39,34 @@
 
         <!-- One -->
         <section id="one" class="wrapper style2">
+       
+        <div class="inner">
+            <div class="grid-style">
+                <div id="banner-wrapper" style="width: 100%">
+                    <legend><!-- Form Name -->
+                        <div class="mon-portefeuille">
+                            <h1 style="font-size: 30px;">Bonjour 
+                                <?php 
+                                    echo $nom; 
+                                ?>
+                                ! &hearts;
+                            </h1>
+                        </div>
+                    </legend>
+
+                    <section id="banner">
+                        <table style="width: 100%">
+                            <tr>
+                                <th>
+                                    <span>Vos précédentes parties</span>
+                                </th>
+                            </tr>
+                        </table>
+                    </section>
+                </diV>
+            </div>
+        </div>
+
 
             <div class="copyright">
                 &copy; CasinOnline
