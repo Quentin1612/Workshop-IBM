@@ -72,4 +72,6 @@ function displayNewTableLine() {
         document.getElementById("fourthColumn").innerHTML += " (Pari perdu)";
     }
     document.getElementById("result-table").style.display = 'block';
+    document.getElementById("finishGame").style.display = 'block';
+    document.getElementById("finishGame").style.margin = '1rem 0 0 0';
 }

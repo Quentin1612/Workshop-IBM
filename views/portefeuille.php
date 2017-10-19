@@ -5,7 +5,7 @@ include_once("../Managers/WalletManager.php");
 
     session_start();
     
-    if(session_status() == 1) {$credit = WalletManager::getWalletAmountWithIdentifier($_SESSION["id"]);}
+    if(session_status() == 2) {$credit = WalletManager::getWalletAmountWithIdentifier($_SESSION["id"]);}
 
 if(SessionManager::checkSession()) {
     ?>
@@ -35,8 +35,8 @@ if(SessionManager::checkSession()) {
             <li><a href="/Workshop-IBM/controllers/disconnection.php">Déconnexion</a></li>
         </ul>
         <div class="copyright">
-        &copy; CasinOnline
-    </div>
+            &copy; CasinOnline
+        </div>
     </nav>
 
     <!-- One -->
@@ -99,8 +99,6 @@ if(SessionManager::checkSession()) {
                 </div>
             </div>
         </div>
-
-      
 
         <!-- Scripts -->
         <script src="../assets/js/jquery.min.js"></script>

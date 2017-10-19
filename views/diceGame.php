@@ -33,14 +33,14 @@
                 <li><a href="/Workshop-IBM/views/portefeuille.php">Portefeuille</a></li>
                 <li><a href="/Workshop-IBM/controllers/disconnection.php">Déconnexion</a></li>
             </ul>
-            <div class="copyright">
-        &copy; CasinOnline
-    </div>
+                <div class="copyright">
+            &copy; CasinOnline
+        </div>
         </nav>
 
         <!-- One -->
         <section id="one" class="wrapper style2">
-            
+
             <div class="dice-game-container">
                 <h3>Jeu de dès 1 vs 1</h3>
                 <h1>Règles du jeu</h1>
@@ -100,18 +100,36 @@
 
                     <div id="banner-wrapper">
                         <section id="banner">
-
-                            <form id="diceBetForm" class="form-horizontal" action="../controllers/walletUpdateAfterGame.php" method="POST">
-                                <fieldset>
-                                    <!-- Text input-->
-                                    <div class="form-group">
-                                        <label class="col-md-4 control-label" for="diceBet">Je mise sur</label>
-                                        <div class="col-md-4">
-                                            <input id="diceBet" required="true" name="diceBet" placeholder="" class="form-control input-md" type="text">
+                            <div class="playerInfoContainer myInfo first">
+                                <form id="diceBetForm" class="form-horizontal" action="../controllers/walletUpdateAfterGame.php" method="POST">
+                                    <fieldset>
+                                        <!-- Text input-->
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for="diceBet">Je mise sur</label>
+                                            <div class="col-md-4">
+                                                <input id="diceBet" required="true" name="diceBet" placeholder="" class="form-control input-md" type="text">
+                                            </div>
                                         </div>
-                                    </div>
-                                </fieldset>
-                            </form>
+                                    </fieldset>
+
+                                    <button id="finishGame" type="submit" style="display: none;">Terminer</button>
+                                </form>
+
+                                <button id="launchDiceGame">Valider</button>
+                            </div>
+                            <div class="playerInfoContainer opponentInfo">
+                                <div class="form-horizontal" >
+                                    <fieldset>
+                                        <!-- Text input-->
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for="diceBet">Mise du parieur adverse</label>
+                                            <div class="col-md-4">
+                                                <input id="opponentBet" disabled="true" placeholder="" class="form-control input-md" type="text">
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
                         </section>
 
                         <table id="result-table" class="result-table">
@@ -136,15 +154,8 @@
                                 <th id="fourthColumn"></th>
                             </tr>
                         </table>
-                        <button id="finishGame" type="submit" style="display: none;">Terminer</button>
                     </div>
-
-                    <button id="launchDiceGame">Jouer</button>
                 </div>
-            </div>
-
-            <div class="copyright">
-                &copy; CasinOnline
             </div>
 
             <!-- Scripts -->
@@ -177,7 +188,6 @@
                     if(!diceGameIsLaunched) {
                         diceBetField.disabled = true;
                         launchDiceGameButton.style.display = 'none';
-                        finishGameButton.style.display = 'block';
                         diceGameIsLaunched = true;
                         launchDiceGame();
                     }
