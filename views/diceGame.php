@@ -2,10 +2,13 @@
     include_once("../Managers/SessionManager.php");
     include_once("../Managers/WalletManager.php");
 
+    // starting session
     session_start();
 
+    // retrieving wallet credit
     $credit = WalletManager::getWalletAmountWithIdentifier($_SESSION["id"]);
 
+    // checking session before displaying content
     if(SessionManager::checkSession()) {
         ?>
         <!DOCTYPE HTML>

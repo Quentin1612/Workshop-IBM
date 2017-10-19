@@ -10,10 +10,12 @@
 
     include("../Managers/SessionManager.php");
 
+    // starting session if is not already done
     if(session_status() == 2) {
         session_destroy();
     }
 
+    // going back to the suscribing / loging page
     include("../views/index.php");
 
 ?>

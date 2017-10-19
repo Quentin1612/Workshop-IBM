@@ -1,12 +1,14 @@
 <?php
 
+// database connection manager
 class DatabaseConnectionManager {
+    // private attributes
     private static $db = null;
     private static $dsn = null;
     private static $username = null;
     private static $password = null;
 
-    // public method to retrieve unique instance
+    // public static method to retrieve unique instance
     public static function getInstance() {
         if (is_null(self::$db)) {
             self::$dsn = 'mysql:host=localhost;dbname=workshop-ibm';

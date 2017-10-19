@@ -2,12 +2,15 @@
     include_once("../Managers/SessionManager.php");
     include_once("../Managers/PersonManager.php");
 
+    // starting session if it's not already done
     if(session_status() == 1) {
         session_start();
     }
 
+    // retrieving person name
     $nom = PersonManager::getName($_SESSION["id"]);
 
+    // checking session before displaying content
     if(SessionManager::checkSession()) {
         ?>
         <!DOCTYPE HTML>

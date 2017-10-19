@@ -1,5 +1,6 @@
 <?php
 
+    // starting sessions if it's not already done
     if(session_status() == 1) {
         session_start();
     }
