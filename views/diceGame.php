@@ -100,7 +100,7 @@
 
                     <div id="banner-wrapper">
                         <section id="banner">
-                            <form id="diceBetForm" class="form-horizontal" action="../controllers/walletUpdateAfterGame.php" method="POST">
+                            <form id="diceBetForm" class="form-horizontal" action="../controllers/walletUpdateAfterGame.php?result=" method="POST">
                                 <div class="playerInfoContainer first">
                                     <fieldset>
                                         <!-- Text input-->
