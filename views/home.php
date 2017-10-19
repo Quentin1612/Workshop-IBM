@@ -1,9 +1,12 @@
 <?php
     include_once("../Managers/SessionManager.php");
+    include_once("../Managers/PersonManager.php");
 
     if(session_status() == 1) {
         session_start();
     }
+
+    $nom = PersonManager::getName($_SESSION["id"]);
 
     if(SessionManager::checkSession()) {
         ?>
@@ -20,7 +23,7 @@
 
         <!-- Header -->
         <header id="header" class="alt">
-            <div class="logo"><a href="index.php">CasinOnline<span> by Groupe 2</span></a></div>
+            <div class="logo"><a href="../views/home.php">CasinOnline<span> by Groupe 2</span></a></div>
             <a href="#menu">Menu</a>
         </header>
 
@@ -32,14 +35,43 @@
                 <li><a href="/Workshop-IBM/views/portefeuille.php">Portefeuille</a></li>
                 <li><a href="/Workshop-IBM/controllers/disconnection.php">Déconnexion</a></li>
             </ul>
+            <div class="copyright">
+                &copy; CasinOnline
+            </div>
         </nav>
 
         <!-- One -->
         <section id="one" class="wrapper style2">
+       
+        <div class="inner">
+            <div class="grid-style">
+                <div id="banner-wrapper" style="width: 100%">
+                    <legend><!-- Form Name -->
+                        <div class="mon-portefeuille">
+                            <h1 style="font-size: 30px;">Bonjour 
+                                <?php 
+                                    echo $nom; 
+                                ?>
+                                ! &hearts;
+                            </h1>
+                        </div>
+                    </legend>
 
-            <div class="copyright">
-                &copy; CasinOnline
+                    <section id="banner">
+                        <table style="width: 100%">
+                            <tr>
+                                <th>
+                                    <span>Vos précédentes parties</span>
+                                </th>
+                            </tr>
+                        </table>
+                    </section>
+                </diV>
             </div>
+        </div>
+
+
+            
 
             <!-- Scripts -->
             <script src="../assets/js/jquery.min.js"></script>

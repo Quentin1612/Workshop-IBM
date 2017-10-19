@@ -25,8 +25,11 @@
 		display: block;
 	}
 
+	
 	body {
 		line-height: 1;
+		height:100%;
+
 	}
 
 	ol, ul {
@@ -1625,6 +1628,8 @@
 
 	html {
 		font-size: 13pt;
+		height:100%;
+		background-color: #f2f2f2;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -2930,6 +2935,14 @@
 		.wrapper.style2 {
 			background-color: #f2f2f2;
 			color: #a6a6a6;
+			height: 100%;
+			
+		}
+
+		.copyright{
+			position: absolute;
+			bottom: 0;
+			color:grey;
 		}
 
 			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
@@ -2946,6 +2959,7 @@
 
 			.wrapper.style2 h1, .wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
 				color: #000;
+				font-size: 25px;
 			}
 
 			.wrapper.style2 blockquote {
@@ -4348,6 +4362,7 @@
 			margin: 0 0 2rem 0;
 			padding: 0;
 			text-align: center;
+			
 		}
 
 		@media screen and (max-width: 736px) {

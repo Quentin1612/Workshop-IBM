@@ -15,8 +15,7 @@ class WalletManager {
 
         if ($connection) {
             $request = "INSERT INTO wallet (identifier, bet_coin_amount) VALUES(" . $walletIdentifier . ", " . $amount . ")";
-            echo $request . "\n";
-            $connection->query($request);
+           $connection->query($request);
         }
     }
 
