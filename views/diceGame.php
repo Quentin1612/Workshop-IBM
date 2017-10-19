@@ -100,8 +100,8 @@
 
                     <div id="banner-wrapper">
                         <section id="banner">
-                            <div class="playerInfoContainer myInfo first">
-                                <form id="diceBetForm" class="form-horizontal" action="../controllers/walletUpdateAfterGame.php" method="POST">
+                            <form id="diceBetForm" class="form-horizontal" action="../controllers/walletUpdateAfterGame.php" method="POST">
+                                <div class="playerInfoContainer first">
                                     <fieldset>
                                         <!-- Text input-->
                                         <div class="form-group">
@@ -111,25 +111,23 @@
                                             </div>
                                         </div>
                                     </fieldset>
-
                                     <button id="finishGame" type="submit" style="display: none;">Terminer</button>
-                                </form>
-
-                                <button id="launchDiceGame">Valider</button>
-                            </div>
-                            <div class="playerInfoContainer opponentInfo">
-                                <div class="form-horizontal" >
-                                    <fieldset>
-                                        <!-- Text input-->
-                                        <div class="form-group">
-                                            <label class="col-md-4 control-label" for="diceBet">Mise du parieur adverse</label>
-                                            <div class="col-md-4">
-                                                <input id="opponentBet" disabled="true" placeholder="" class="form-control input-md" type="text">
+                                </div>
+                                <div class="playerInfoContainer">
+                                    <div class="form-horizontal" >
+                                        <fieldset>
+                                            <!-- Text input-->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="diceBet">Mise du parieur adverse</label>
+                                                <div class="col-md-4">
+                                                    <input id="opponentBet" disabled="true" placeholder="" class="form-control input-md" type="text">
+                                                </div>
                                             </div>
-                                        </div>
-                                    </fieldset>
-                                </form>
-                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                            <button id="launchDiceGame">Valider</button>
                         </section>
 
                         <table id="result-table" class="result-table">
@@ -187,6 +185,7 @@
                 launchDiceGameButton.addEventListener('click', function() {
                     if(!diceGameIsLaunched) {
                         diceBetField.disabled = true;
+                        setOpponentBet();
                         launchDiceGameButton.style.display = 'none';
                         diceGameIsLaunched = true;
                         launchDiceGame();

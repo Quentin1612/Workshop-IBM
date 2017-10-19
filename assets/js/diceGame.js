@@ -64,14 +64,20 @@ function displayNewTableLine() {
 
     document.getElementById("firstColumn").innerHTML = "1";
     document.getElementById("secondColumn").innerHTML = "3";
-    document.getElementById("fourthColumn").innerHTML = result;
 
     if(result.toString() == betCost.toString()) {
-        document.getElementById("fourthColumn").innerHTML += " (Pari gagné)";
+        document.getElementById("fourthColumn").innerHTML = "Pari gagné";
+    } else if(result.toString() == document.getElementById("opponentBet").innerHTML) {
+        document.getElementById("fourthColumn").innerHTML = "Pari perdu";
     } else {
-        document.getElementById("fourthColumn").innerHTML += " (Pari perdu)";
+        document.getElementById("fourthColumn").innerHTML = "Egalité";
     }
     document.getElementById("result-table").style.display = 'block';
     document.getElementById("finishGame").style.display = 'block';
     document.getElementById("finishGame").style.margin = '1rem 0 0 0';
+}
+
+function setOpponentBet() {
+    var opponentBet = Math.trunc(Math.random() * 6);
+    document.getElementById("opponentBet").value = opponentBet;
 }

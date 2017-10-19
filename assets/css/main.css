@@ -106,10 +106,6 @@
 		width: 49%;
 	}
 
-	.playerInfoContainer.myInfo form {
-		margin: 2rem 2rem 2rem 0;
-	}
-
 	.playerInfoContainer.first {
 		border-right: 1px solid black;
 	}
