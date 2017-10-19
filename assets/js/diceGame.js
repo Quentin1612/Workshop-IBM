@@ -72,7 +72,7 @@ function displayNewTableLine() {
     } else {
         document.getElementById("fourthColumn").innerHTML = "Egalité";
     }
-    document.getElementById("result-table").style.display = 'block';
+    document.getElementById("result-table").style.display = 'table';
     document.getElementById("finishGame").style.display = 'block';
     document.getElementById("finishGame").style.margin = '1rem 0 0 0';
 

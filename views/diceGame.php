@@ -110,7 +110,7 @@
                                         <div class="form-group">
                                             <label class="col-md-4 control-label" for="diceBet">Je mise sur</label>
                                             <div class="col-md-4">
-                                                <input id="diceBet" required="true" name="diceBet" placeholder="" class="form-control input-md" type="text">
+                                                <input id="diceBet" required="true" name="diceBet" placeholder="" class="form-control input-md" type="text" style="width:350px">
                                             </div>
                                         </div>
                                     </fieldset>
@@ -121,9 +121,9 @@
                                         <fieldset>
                                             <!-- Text input-->
                                             <div class="form-group">
-                                                <label class="col-md-4 control-label" for="diceBet">Mise du parieur adverse</label>
+                                                <label class="col-md-4 control-label" for="diceBet" style="margin-left:350px">Mise du parieur adverse</label>
                                                 <div class="col-md-4">
-                                                    <input id="opponentBet" disabled="true" placeholder="" class="form-control input-md" type="text">
+                                                    <input id="opponentBet" disabled="true" placeholder="" class="form-control input-md" type="text" style="width:300px; margin-left:350px">
                                                 </div>
                                             </div>
                                         </fieldset>
@@ -132,7 +132,7 @@
                             </form>
                             <button id="launchDiceGame">Valider</button>
                         </section>
-
+    </br>
                         <table id="result-table" class="result-table">
                             <tr>
                                 <th>
