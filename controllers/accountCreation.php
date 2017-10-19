@@ -16,4 +16,6 @@
     $login = $_POST["firstName"] . "." . $_POST["familyName"];
 
     PersonManager::insertNewPerson($login, $password, $firstName, $familyName, $email, $address);
+    SessionManager::startSession($email);
+    include("../views/home.php");
 ?>

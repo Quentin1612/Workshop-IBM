@@ -23,8 +23,10 @@ class PersonManager {
 
             $connection->query($request);
         }
+    }
 
-        DatabaseConnectionManager::stopConnection();
+    public static function retrieveInfoWithId() {
+
     }
 
     public static function getLastPersonId() {
@@ -35,7 +37,6 @@ class PersonManager {
             $answer = $connection->query('SELECT MAX(identifier) FROM person')->fetch();
         }
 
-        DatabaseConnectionManager::stopConnection();
         return $answer[0];
     }
 
@@ -47,7 +48,6 @@ class PersonManager {
             $answer = $connection->query('SELECT identifier FROM person WHERE email = "' . $email . '"')->fetch();
         }
 
-        DatabaseConnectionManager::stopConnection();
         return $answer[0];
     }
 }

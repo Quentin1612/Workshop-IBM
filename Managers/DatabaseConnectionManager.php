@@ -11,7 +11,7 @@ class DatabaseConnectionManager {
         if (is_null(self::$db)) {
             self::$dsn = 'mysql:host=localhost;dbname=workshop-ibm';
             self::$username = 'root';
-            self::$password = '';
+            self::$password = 'root';
 
             try {
                 self::$db = new PDO(self::$dsn, self::$username, self::$password);
@@ -20,10 +20,5 @@ class DatabaseConnectionManager {
             }
         }
         return self::$db;
-    }
-
-    // stop database connection
-    public static function stopConnection() {
-        self::$db = null;
     }
 }

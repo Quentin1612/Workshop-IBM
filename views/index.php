@@ -82,7 +82,7 @@
         </legend>
         <section id="banner">
 
-            <form class="form-horizontal">
+            <form class="form-horizontal" action="../controllers/accountCreation.php" method="POST">
                 <fieldset>
 
                     <!-- Text input-->
